@@ -7,11 +7,7 @@
 - style.css — التصميم (RTL + ألوان وردية)
 - script.js — التفاعلات (صوت، أنيميشن، نور)
 - assets/ — الصور الثلاث (birthday.jpg, first-birthday.jpg, princess.jpg, doctor.jpg)
-
-## كيف تفتح في VS Code
-1. افتح مجلد "ayat watin" في VS Code.
-2. انقر على index.html ثم Live Server (أو افتح الملف مباشرة في المتصفح).
-3. اضغط "افتحي هديتك" لفتح الموقع.
+.
 
 ## كيف تعوض الصور
 استبدل الملفات داخل مجلد assets بصورك الشخصية من صورة آيات (photo.jpg). احتفظ بالأسماء نفسها حتى يعمل الموقع.
