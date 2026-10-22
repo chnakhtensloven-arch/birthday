@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عيد ميلاد سعيد آيات وتين (بايليش) 🎀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Magical Background -->
+  <div class="magical-background" id="floating-elements"></div>
+
+  <!-- Music Control Bar -->
+  <div class="music-bar">
+    <button id="play-music-btn" class="music-btn">🎵 تشغيل الموسيقى</button>
+    <span id="music-visualizer" class="music-visualizer" style="display:none;"></span>
+    <button id="stop-music-btn" class="music-btn" style="background: #b0578c;">🔇 إيقاف</button>
+  </div>
+
+  <!-- 1. WELCOME SCREEN -->
+  <div id="welcome-screen">
+    <div class="welcome-card">
+      <div class="gift-box-icon">🎁</div>
+      <div class="gift-box" style="margin: 0 auto 1rem auto;">
+        <div style="font-size:3rem;text-align:center;">✨🎀✨</div>
+      </div>
+      <h1>مفاجأة صغيرة لأجمل <span class="name-shimmer">آيات وتين</span> في الدنيا 🎀</h1>
+      <button id="open-gift-btn" class="btn-primary">افتحي هديتك</button>
+    </div>
+  </div>
+
+  <!-- Touch / Cursor Sparkle Container -->
+  <div id="sparkle-container" class="particles-container"></div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <div id="main-content">
+
+    <!-- 2. FIRST BIRTHDAY HERO -->
+    <section class="hero-section section-reveal">
+      <h1 class="hero-title">عيد ميلاد سعيد يا <span class="name-shimmer">آيات وتين</span></h1>
+      <h2 class="hero-subtitle">بايليش الجميلة <span class="crown">✦</span> 💗</h2>
+      <p class="hero-desc">اليوم تكمل أميرتنا الصغيرة عامها الأول بكل الحب والبهجة!</p>
+      <div class="date-badge">📅 23 أكتوبر 2026</div>
+      <div class="hero-cake-art">🎂🎈🧸</div>
+    </section>
+
+    <!-- 3. A LETTER FROM HER AUNT -->
+    <section class="letter-section section-reveal">
+      <h2 class="section-title">💌 رسالة من خالو</h2>
+      <div class="letter-box">
+        <p id="aunt-letter-text">جاري تحميل الرسالة...</p>
+      </div>
+    </section>
+
+    <!-- 4. OUR LITTLE DOCTOR -->
+    <section class="doctor-section section-reveal">
+      <h2 class="section-title">👩‍⚕️ حلم صغير لمستقبل كبير</h2>
+      <div class="doctor-container">
+        <div class="doctor-img-wrap">
+          <div class="portrait-frame">
+            <img src="assets/doctor.jpg" alt="طبيبتنا الصغيرة آيات وتين" onerror="this.src='assets/birthday.jpg'">
+          </div>
+        </div>
+        <div class="doctor-content">
+          <p>
+            يا بايليش، نتمنى أن تكبري وتصبحي طبيبة رائعة، تساعدين الناس وتنشرين الأمل والابتسامة. هذا حلم جميل نتمنى أن تحققيه عندما تكبرين، والأهم أن تكوني سعيدة وأن تختاري الطريق الذي تحبينه دائماً.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PHOTO GALLERY -->
+    <section class="gallery-section section-reveal">
+      <h2 class="section-title">📸 ذكريات أميرتنا البهية</h2>
+      <div class="gallery-grid">
+        <!-- Slot 1 -->
+        <div class="gallery-card">
+          <div class="photo-frame">
+            <div class="gallery-img-box">
+              <img src="assets/first-birthday.jpg" alt="صورة عيد ميلادها الأول" onerror="this.src='assets/birthday.jpg'">
+            </div>
+            <div class="gallery-caption">صورة عيد ميلادها الأول</div>
+          </div>
+        </div>
+        <!-- Slot 2 -->
+        <div class="gallery-card">
+          <div class="photo-frame">
+            <div class="gallery-img-box">
+              <img src="assets/princess.jpg" alt="أميرتنا بايليش" onerror="this.src='assets/birthday.jpg'">
+            </div>
+            <div class="gallery-caption">أميرتنا بايليش</div>
+          </div>
+        </div>
+        <!-- Slot 3 -->
+        <div class="gallery-card">
+          <div class="photo-frame">
+            <div class="gallery-img-box">
+              <img src="assets/doctor.jpg" alt="طبيبتنا الصغيرة في المستقبل" onerror="this.src='assets/birthday.jpg'">
+            </div>
+            <div class="gallery-caption">طبيبتنا الصغيرة في المستقبل</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INTERACTIVE BIRTHDAY CAKE -->
+    <section class="cake-section section-reveal">
+      <h2 class="section-title">🎂 كعكة عيد الميلاد المجيد</h2>
+      <div class="cake-wrapper" id="cake-wrapper">
+        🎂<span class="candle" style="position: absolute; top: -20px; right: 45%; font-size: 3rem;">🕯️✨</span>
+      </div>
+      <p class="cake-message" id="cake-message">اضغطي على الزر أدناه لإطفاء الشمعة وتمني أمنية جميلة!</p>
+      <div class="btn-group">
+        <button id="blow-candle-btn" class="btn-primary">أطفئي الشمعة وتمني أمنية</button>
+        <button id="reset-celebration-btn" class="btn-secondary" style="display: none;">احتفلي من جديد 🎈</button>
+      </div>
+    </section>
+
+    <!-- 7. FINAL BIRTHDAY MESSAGE & MAGIC ENVELOPE -->
+    <section class="final-section section-reveal">
+      <h2 class="final-title">كل عام وأنتِ فرحتنا يا <span class="name-shimmer">آيات وتين</span> 💗</h2>
+      <h3 class="final-subtitle">عيد ميلاد سعيد يا بايليش</h3>
+      <p class="final-desc">ربي يحفظك ويجعل أيامك كلها فرحاً ونوراً وابتسامات لا تنتهي.</p>
+
+      <div class="magical-envelope" style="margin: 2rem auto 0; text-align: center;">
+        <button id="envelope-btn" class="btn-primary" style="background: linear-gradient(135deg, #ff8da1, #ffb6c1); padding: 0.8rem 2rem;">
+          💌 رسالة سحرية من خالك
+        </button>
+        <div id="envelope-content" style="display: none; margin-top: 1.5rem;">
+          <div class="envelope" style="width:80%; max-width:240px; height:250px; margin:0 auto; position:relative;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:2.5rem; opacity:0.8;">✉️</div>
+          </div>
+          <div class="letter-box" style="margin-top:1rem;">
+            <p style="font-family:'Amiri',serif; font-size:1.2rem; line-height:1.8; color:#554257;">
+              إلى بايليش حبيبة خاتك، ربي يحفظك ويملأ حياتك نوراً وفرحاً، ويجعل مستقبلك أجمل مما نحلم لكِ. أحبك يا آيات وتين 💗
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+ل
+  <script src="script.js"></script>
+</body>
+</html>
